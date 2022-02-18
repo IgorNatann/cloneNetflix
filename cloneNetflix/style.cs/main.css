@@ -1,0 +1,59 @@
+/* Declaração das variáveis */
+/* Root é a Raiz do documento, por isso tudo q ser declardo dentro do ROOT, pode ser utilizado em todo o projeto.*/
+:root {
+    --vermelho: #e50914;  
+    --preto: #141414;
+}
+
+/* Resetando CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Define exatamente o tamanho do elemento especificado. não deixando estourar tamanho da caixa*/
+}
+
+/*Elementos Base, aplicados para tudo que não tem formatação.*/
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /* Libera os textos contidos na caixa para conseguir efetuar formatação desejada. */
+    align-items: center;
+    justify-content: space-between; /* Alinha o conteudo do H2 e do Nav automaticamente, deixando um ao right e o outro a left de forma horizontal */
+
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px; /* Adicionando espaçamentos a direita dos texto contidos no nav */
+}
+
+header nav a:hover {
+    color: #fff; /* Mudando a cor do texto contido no nav para branco quando o cursor está sobre o texto. */
+}
+
+/*Edição Filme Principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-house.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+2
