@@ -15,7 +15,7 @@
 /*Elementos Base, aplicados para tudo que não tem formatação.*/
 body {
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -108,6 +108,9 @@ header nav a:hover {
     display: block;
 }
 
+.carrosel-filmes{
+    margin-top: 5px;
+}
 
 
 
