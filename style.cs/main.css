@@ -1,0 +1,127 @@
+/* Declaração das variáveis */
+/* Root é a Raiz do documento, por isso tudo q ser declardo dentro do ROOT, pode ser utilizado em todo o projeto.*/
+:root {
+    --vermelho: #e50914;  
+    --preto: #141414;
+}
+
+/* Resetando CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Define exatamente o tamanho do elemento especificado. não deixando estourar tamanho da caixa*/
+}
+
+/*Elementos Base, aplicados para tudo que não tem formatação.*/
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /* Libera os textos contidos na caixa para conseguir efetuar formatação desejada. */
+    align-items: center;
+    justify-content: space-between; /* Alinha o conteudo do H2 e do Nav automaticamente, deixando um ao right e o outro a left de forma horizontal */
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px; /* Adicionando espaçamentos a direita dos texto contidos no nav */
+}
+
+header nav a:hover {
+    color: #fff; /* Mudando a cor do texto contido no nav para branco quando o cursor está sobre o texto. */
+}
+
+/*Edição Filme Principal*/
+.filme-principal {
+    font-size: 14px; /*Define o tamanho do texto da sinopse */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-house.jpg'); /* Cria uma camada por cima da imagem, para deixar mais visivel o texto*/
+
+    height: 400px; /* Tamanho da imagem*/
+    background-size: cover; /*Tamanho da imagem do background*/
+
+    display: flex; /*Joga todos os elementos pro padrão de linha na vertical*/
+    flex-direction: column; /*Estabelecendo que todos os elementos vão está em colunas */
+    justify-content: center; /* Centralizando elementos ao meio da coluna*/
+    align-items: flex-start; /*Estabelecendo que sempre os elementos vão iniciar da esquerda*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px; /* Adicionando formatação específica para descrição */
+    margin-top: 20px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0,0,0,.50); /* RGBA é usado para criar efeito de transparência*/
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* Formatação para quando úsuario passar o cursor em cima do botão, evidenciar que ele é clicavel. */
+    transition: .5s ease all; /* Adicionando animação no botão para ficar mais fluído ao selecionado. */
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Formatando espaçamento do ícone com o texto.*/
+.botao i{
+    margin-right: 8px;
+}
+
+
+/*Adicionando formatação a div pai, para alinhando em massa das div filhas */
+.container{
+    margin-left: 20px;
+}
+
+/*Adicionando formatação a div filha que está dentro do div pai filme, setando para pegar a div que container que está dentro do filme. */
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%; /*Definindo que a imagem aparecera com o seu tamanho original.*/
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.cs/main.css">
-    <title>Netflix Clone</title>
+    <!--owl css-->
+    <link rel="stylesheet" href="style.cs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.cs/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h2>Netflix</h2>
+            <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
@@ -18,5 +22,67 @@
             </nav>
         </div>
     </header>
+
+    <!--Ínicio do Conteudo Principal -->
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro. Assista agora a nova temporada de House of Cards que está imperdível</p>
+                <div class="botoes"> <!-- Toda div que está dentro de outra div "div filho, tem como padrão o display block"-->
+                    <button role="button" class="botao"> <!-- Role=button, friza para todos navegadores qual a função do botão, pois sistemas operacionais mobile que não entendem.. -->
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>     
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">    
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="">
+            </div>
+        </div>
+    </diiv>
+
+    <script src="https://kit.fontawesome.com/04d56c02a6.js" crossorigin="anonymous"></script> <!-- Importando Icones para adicionar as botões -->
+    <!--owl Js-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>
+
